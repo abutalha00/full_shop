@@ -1,0 +1,39 @@
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 1rem;
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+tr, td, th {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr td:last-child {
+  text-align: center;
+}
