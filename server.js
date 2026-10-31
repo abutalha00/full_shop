@@ -1,9 +1,13 @@
 import { createServer } from 'http';
-import { getProducts } from './getFeaturedProducts.js';
+import { getProducts } from './js/getFeaturedProducts.js';
+import path from 'node:path';
 
 const server = createServer((req, res) => {
 
-  console.log(`Request received: ${req.method} ${req.url}`);
+  const __dirname = import.meta.dirname
+  const __filename = path.join(__dirname, '')
+  console.log(__dirname);
+
 
   if (req.method === 'GET' && req.url === '/featured') {
     const featured = getProducts('featured');
